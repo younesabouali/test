@@ -1,0 +1,13 @@
+<div>
+  <h1>Categories</h1>
+  <ul>
+    <li ng-repeat="element in $ctrl.data">
+      <a ui-sref="itemsMenu({itemId: element.short_name})">
+        id: {{element.id}}
+      </a>
+
+      <span>name: {{element.name}}</span><br />
+      <span>short_name: {{element.short_name}}</span><br />
+    </li>
+  </ul>
+</div>
